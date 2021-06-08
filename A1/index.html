@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>contato</title>
+        <link rel="stylesheet" type="text/css" href="contato.css"/>
+    </head>
+    <body>
+        <header>
+            <img src="img\contato.png"/>
+        </header>
+        <nav>
+            <a href="blog.html">Home</a> |
+            <a href="pagina1.html">Aulas</a> |
+            <a href="index.html">contato</a> |
+        </nav>
+        
+        <section>
+            <article>
+                <p>Fale conosco:</p>
+                <form>
+                    <form id="contato" action="" method="post" onsubmit="return enviaForm(this)">
+                        <p class="campos">*Campos obrigatórios</p>
+                        <div><input class="nome" title="Nome completo*" type="text" maxlength="255" name="nome" placeholder="Nome completo*"></div>
+                        <div><input class="email" title="E-mail*" type="text" maxlength="255" name="email" placeholder="E-mail*"></div>
+                        <div class=""><input class="telefone" title="Telefone" type="text" maxlength="9" name="telefone" placeholder="telefone"></div>
+                    <p>Tipo de solicitação:</p>
+                    <select name="tipo de solicitação">
+                        <option value="financeiro">financeiro</option>
+                        <option value="horario">horario</option> 
+                        <option value="Treino">treino</option>
+                    </select>
+                    <p>Email:<br/><input type="mail" name="email"/></p>
+                    <p>Mensagem:<br/><textarea name="msg"></textarea></p>
+                    <p><input type="submit" value="Enviar"/></p>
+                </form>
+                
+            </article>
+        </section>
+        
+        <footer>
+            <hr/>
+            <small>&copy; Felipe Simões Otsuka Rgm:25461354 Analise e desenvolvimento de sistemas</small>
+        </footer>
+    </body>
+</html> 
